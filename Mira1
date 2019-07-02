@@ -1,0 +1,33 @@
+sv_competitive_minspec 0
+
+viewmodel_offset_x "x"           //Substitue o "x" pelo seu
+viewmodel_offset_y "x"           //Substitue o "x" pelo seu
+viewmodel_offset_z "x"           //Substitue o "x" pelo seu
+viewmodel_fov "x"                //Substitue o "x" pelo seu
+
+alias +Visao "viewmodel_offset_x -5"
+alias -Visao "viewmodel_offset_x x"
+
+alias toggleMirar "ativarMirar";
+alias ativarMirar "alias toggleMirar desativarMirar; +mirar";
+alias desativarMirar "alias toggleMirar ativarMirar; -mirar";
+
+//Substitue o "x" pelo seu
+
+alias +mirar exec "viewmodel_offset_y -4; viewmodel_offset_z 1.15; viewmodel_fov 68; crosshair 0; +Visao"
+alias -mirar exec "viewmodel_offset_y x;
+ viewmodel_offset_z x;
+ viewmodel_fov x;
+ crosshair 1; -Visao"
+
+//Substitua o "x" por "mouse2" na opção abaixo caso prefira segurar a mira
+
+bind "x" "+mirar"
+
+//Substitua o "x" por "mouse2" na opção abaixo caso prefira clicar do que segurar a mira
+
+bind "x" toggleMirar;
+
+//Substitua o "x" pela key que deseja apertar para o +attack2
+
+bind "x" "+attack2"
