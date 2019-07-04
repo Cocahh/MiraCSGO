@@ -1,0 +1,106 @@
+sv_competitive_minspec 0
+
+viewmodel_offset_x "MUDE"                 // Substitue o "MUDE" pelo seu
+viewmodel_offset_y "MUDE"                // Substitue o "MUDE" pelo seu
+viewmodel_offset_z "MUDE"              // Substitue o "MUDE" pelo seu
+viewmodel_fov "MUDE"                   // Substitue o "MUDE" pelo seu
+
+alias +Mira1 "viewmodel_offset_x -5"
+alias -Mira1 "viewmodel_offset_x MUDE"
+
+alias +Mira2 "viewmodel_offset_x -6.25"
+alias -Mira2 "viewmodel_offset_x MUDE"
+
+alias +Mira3 "viewmodel_offset_x -2.8"
+alias -Mira3 "viewmodel_offset_x MUDE"
+
+alias +Mira4 "viewmodel_offset_x -3.8"
+alias -Mira4 "viewmodel_offset_x MUDE"
+
+alias +Mira5 "viewmodel_offset_x -5.15"
+alias -Mira5 "viewmodel_offset_x MUDE"
+
+alias +Mira6 "viewmodel_offset_x -5.22"
+alias -Mira6 "viewmodel_offset_x MUDE"
+
+alias toggleMirar1 "ativarMirar1";
+alias ativarMirar1 "alias toggleMirar1 desativarMirar1; +mirar1";
+alias desativarMirar1 "alias toggleMirar1 ativarMirar1; -mirar1"
+
+alias toggleMirar2 "ativarMirar2";
+alias ativarMirar2 "alias toggleMirar2 desativarMirar2; +mirar2"
+alias desativarMirar2 "alias toggleMirar2 ativarMirar2; -mirar2"
+
+alias toggleMirar3 "ativarMirar3";
+alias ativarMirar3 "alias toggleMirar3 desativarMirar3; +mirar3"
+alias desativarMirar3 "alias toggleMirar3 ativarMirar3; -mirar3"
+
+alias toggleMirar4 "ativarMirar4";
+alias ativarMirar4 "alias toggleMirar4 desativarMirar4; +mirar4"
+alias desativarMirar4 "alias toggleMirar4 ativarMirar4; -mirar4"
+
+alias toggleMirar5 "ativarMirar5";
+alias ativarMirar5 "alias toggleMirar5 desativarMirar5; +mirar5"
+alias desativarMirar5 "alias toggleMirar5 ativarMirar5; -mirar5"
+
+alias toggleMirar6 "ativarMirar6";
+alias ativarMirar6 "alias toggleMirar6 desativarMirar6; +mirar6"
+alias desativarMirar6 "alias toggleMirar6 ativarMirar6; -mirar6"
+
+// Substitue o "MUDE" pelo seu
+
+alias +mirar1 exec "viewmodel_offset_y -4; viewmodel_offset_z 1.15; viewmodel_fov 68; crosshair 0; +Mira1"
+alias -mirar1 exec "viewmodel_offset_y MUDE; viewmodel_offset_z MUDE; viewmodel_fov MUDE; crosshair 1; -Mira1"
+
+alias +mirar2 exec "viewmodel_offset_y -4; viewmodel_offset_z 1.3; viewmodel_fov 68; crosshair 0; +Mira2"
+alias -mirar2 exec "viewmodel_offset_y MUDE; viewmodel_offset_z MUDE; viewmodel_fov MUDE; crosshair 1; -Mira2"
+
+alias +mirar3 exec "viewmodel_offset_y -4; viewmodel_offset_z 1.4; viewmodel_fov 68; crosshair 0; +Mira3"
+alias -mirar3 exec "viewmodel_offset_y MUDE; viewmodel_offset_z MUDE; viewmodel_fov MUDE; crosshair 1; -Mira3"
+
+alias +mirar4 exec "viewmodel_offset_y -4; viewmodel_offset_z 0.57; viewmodel_fov 68; crosshair 0; +Mira4"
+alias -mirar4 exec "viewmodel_offset_y MUDE; viewmodel_offset_z MUDE; viewmodel_fov MUDE; crosshair 1; -Mira4"
+
+alias +mirar5 exec "viewmodel_offset_y -4; viewmodel_offset_z 0.9; viewmodel_fov 68; crosshair 0; +Mira5"
+alias -mirar5 exec "viewmodel_offset_y MUDE; viewmodel_offset_z MUDE; viewmodel_fov MUDE; crosshair 1; -Mira5"
+
+alias +mirar6 exec "viewmodel_offset_y -4; viewmodel_offset_z 0.5; viewmodel_fov 68; crosshair 0; +Mira6"
+alias -mirar6 exec "viewmodel_offset_y MUDE; viewmodel_offset_z MUDE; viewmodel_fov MUDE; crosshair 1; -Mira6"
+
+// Substitua o "MUDE" pela key que deseja apertar para o +attack2
+
+bind "MUDE" "+attack2"
+
+// Binds das miras (NÃO MEXA)
+
+Alias "1" "bind mouse2 +mirar1"
+
+Alias "2" "bind mouse2 +mirar2"
+
+Alias "3" "bind mouse2 +mirar3"
+
+Alias "4" "bind mouse2 +mirar4"
+
+Alias "5" "bind mouse2 +mirar5"
+
+Alias "6" "bind mouse2 +mirar6"
+
+// Menu:
+
+echo 1. Mira 1 - AK-47, MP7, MAC-10, SG 553, GALIL AR, UMP-45, PP-BIZON, TEC-9, MP9 e Todas as escopetas 
+echo 2. Mira 2 - FAMAS 
+echo 3. Mira 3 - USP-S, P200, P250, FIVE-SEVEN e GLOCK-18 
+echo 4. Mira 4 - DESERT-EAGLE e R8 REVOLVER 
+echo 5. Mira 5 - M4A4
+echo 6. Mira 6 - M4A1-S
+
+// Binds para as miras (por padrão no numpad)
+
+bind "kp_end" "1"
+bind "kp_downarrow" "2"
+bind "kp_pgdn" "3"
+bind "kp_leftarrow" "4"
+bind "kp_5" "5"
+bind "kp_rightarrow" "6"
+
+echo Feito por: Cocahh
